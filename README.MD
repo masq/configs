@@ -1,4 +1,4 @@
-##### Configuration
+### Configuration
 
 This repo contains configuration files that I like, so that I can get them later
 on on some other systems or whatever. I'm making them available here so that I 
