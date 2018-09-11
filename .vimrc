@@ -16,23 +16,20 @@ set cursorline
 set cc=80
 highlight ColorColumn ctermbg=5
 
-" Set tabs and such to 2
-set shiftwidth=2 softtabstop=2 tabstop=2
+" Set tabs and such to 2, shiftround so that shifts will round to our shiftwidth
+set shiftwidth=2 softtabstop=2 tabstop=2 shiftround
 
 " Turn on autoindenting
 set autoindent
 
 " Make tabs act/be written out as spaces
-set expandtab
+"set expandtab
 
 " Make vim better-colored for dark backgrounds
 set background=dark
 
 " Ensure lines don't wrap down, and just carry on forever
 set nowrap
-
-" this breaks the semicolon button even in insert mode >_>
-"set pastetoggle=;
 
 " Move current tab into the specified direction.
 "
@@ -94,3 +91,7 @@ function! Paste_End()
 endfunction
 
 nnoremap ; :call Paste_Func()<cr>
+
+" Python specific coding
+autocmd FileType py setlocal shiftwidth=4 tabstop=4 softtabstop=4 expandtab
+autocmd FileType python setlocal shiftwidth=4 tabstop=4 softtabstop=4 expandtab
