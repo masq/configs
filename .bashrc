@@ -118,20 +118,53 @@ fi
 
 export PATH=/home/masq/bin/:$PATH                                                  
 export EDITOR=vim                                                                  
-                                                                                   
+
+function print_status {
+	local esc="\e["
+
+	local reset="${esc}0m"
+	local bold="${esc}1m"
+	local green="${esc}92m"
+	local red="${esc}91m"
+	local yellow="${esc}93m"
+	local blue="${esc}96m"
+
+	echo -e "${bold}[${!1}${2}${reset}${bold}]${reset} ${3}"
+}
+
+function print_success {
+	print_status "green" "+" "${1}!"
+}
+
+function print_info {
+	print_status "blue" "*" "${1}..."
+}
+
+function print_error {
+	print_status "red" "-" "${1}!"
+}
+
+function print_warn {
+	print_status "yellow" "!" "${1}."
+}
+
+export -f print_warn
+export -f print_error
+export -f print_success
+export -f print_info
+
 SSH_ENV="$HOME/.ssh/environment"                                                   
-                                                                                   
+
 function start_agent {                                                             
-    echo "[*] Initialising new SSH agent..."                                           
+    print_info "Initializing new SSH agent..."                                           
     /usr/bin/ssh-agent | sed 's/^echo/#echo/' > "${SSH_ENV}"                       
-    echo "[+] succeeded"
+    print_success "SSH agent initialized!"
     chmod 600 "${SSH_ENV}"                                                         
     . "${SSH_ENV}" > /dev/null                                                     
     /usr/bin/ssh-add;                                                              
 }                                                                                  
-                                                                                   
+
 # Source SSH settings, if applicable                                               
-                                                                                   
 if [ -f "${SSH_ENV}" ]; then                                                       
     . "${SSH_ENV}" > /dev/null                                                     
     #ps ${SSH_AGENT_PID} doesn't work under cywgin                                 
