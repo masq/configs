@@ -1,0 +1,41 @@
+urxvt*foreground: White
+urxvt*depth: 32
+#urxvt*background: rgba:0000/0000/0020/a800
+urxvt*background: Black
+urxvt*transparent: True
+#urxvt*tintColor: Black
+urxvt*shading: 35
+urxvt*visualBell: True
+#urxvt*scrollBar: False
+#urxvt*scrollstyle: plain
+#urxvt*scrollstyle: rxvt
+#urxvt*scrollstyle: next
+urxvt*scrollstyle: xterm
+urxvt*scrollBar_right: True
+urxvt*thickness: 10
+urxvt*font: \
+			xft:DejaVu Sans Mono:style=Book:antialias=false:size=10,\
+			xft:WenQuanYi Bitmap Song:size=10, \
+			xft:FreeSerif:style=Regular, \
+			xft:unifont:style=Medium:antialias=false
+
+
+urxvt*borderColor: #3d00a9
+urxvt*scrollColor: #00FFFF
+
+*color0:  #2E3436
+*color1:  #a40000
+*color2:  #4E9A06
+*color3:  #C4A000
+*color4:  #3465A4
+*color5:  #75507B
+*color6:  #ce5c00
+*color7:  #babdb9
+*color8:  #555753
+*color9:  #EF2929
+*color10: #8AE234
+*color11: #FCE94F
+*color12: #729FCF
+*color13: #AD7FA8
+*color14: #fcaf3e
+*color15: #EEEEEC
