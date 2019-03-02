@@ -17,7 +17,7 @@ set cc=80
 highlight ColorColumn ctermbg=5
 
 " Set tabs and such to 2, shiftround so that shifts will round to our shiftwidth
-set shiftwidth=2 softtabstop=2 tabstop=2 shiftround
+set shiftwidth=4 softtabstop=4 tabstop=4 shiftround
 
 " Turn on autoindenting
 set autoindent
