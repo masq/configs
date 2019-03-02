@@ -159,7 +159,7 @@ SSH_ENV="$HOME/.ssh/environment"
 function start_agent {                                                             
     print_info "Initializing new SSH agent..."                                           
     /usr/bin/ssh-agent | sed 's/^echo/#echo/' > "${SSH_ENV}"                       
-    print_success "SSH agent initialized!"
+    print_success "SSH agent initialized"
     chmod 600 "${SSH_ENV}"                                                         
     . "${SSH_ENV}" > /dev/null                                                     
     /usr/bin/ssh-add;                                                              
