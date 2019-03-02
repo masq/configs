@@ -95,3 +95,6 @@ nnoremap ; :call Paste_Func()<cr>
 " Python specific coding
 autocmd FileType py setlocal shiftwidth=4 tabstop=4 softtabstop=4 expandtab
 autocmd FileType python setlocal shiftwidth=4 tabstop=4 softtabstop=4 expandtab
+
+" Javascript module specific coding
+au BufNewFile,BufRead *.mjs set syntax=javascript
