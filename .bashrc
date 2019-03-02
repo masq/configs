@@ -148,6 +148,7 @@ function print_warn {
 	print_status "yellow" "!" "${1}."
 }
 
+export -f print_status
 export -f print_warn
 export -f print_error
 export -f print_success
