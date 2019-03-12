@@ -129,7 +129,7 @@ function print_status {
 	local yellow="${esc}93m"
 	local blue="${esc}96m"
 
-	echo -e "${bold}[${!1}${2}${reset}${bold}]${reset} ${3}"
+	echo -e "${bold}${!1}[${2}${reset}${!1}${bold}]${reset} ${3}"
 }
 
 function print_success {
