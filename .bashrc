@@ -120,7 +120,7 @@ export PATH=/home/masq/bin/:$PATH
 export EDITOR=vim                                                                  
 
 function print_status {
-	local esc="\e["
+	local esc="\033["
 
 	local reset="${esc}0m"
 	local bold="${esc}1m"
