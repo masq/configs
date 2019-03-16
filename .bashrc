@@ -155,6 +155,8 @@ export -f print_success
 export -f print_info
 
 SSH_ENV="$HOME/.ssh/environment"
+mkdir "$HOME/.ssh" 2>/dev/null  # ignore errors, probably dir already exists
+touch "${SSH_ENV}"
 
 function start_agent {                                                             
 	print_info "Initializing new SSH agent"
