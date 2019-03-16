@@ -1,0 +1,24 @@
+# configs repo .gitignore file
+
+# Strategy here is to ignore everything, and only add in files that you actually want included
+*
+
+# Git repo things
+!README.MD
+!.gitignore
+
+# Certain rc files
+!.bashrc
+!.vimrc
+
+# X11 / Window manager config stuff
+!.x*
+!.X*
+!.fehbg
+!.config/i3
+!.i3*
+
+# Scripts I want synced
+!update.sh
+!time_sync.sh
+
