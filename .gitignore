@@ -12,8 +12,10 @@
 !.vimrc
 
 # X11 / Window manager config stuff
-!.x*
-!.X*
+!.xinitrc
+!.xsession
+!.Xdefaults
+!.Xresources
 !.fehbg
 !.config/i3
 !.i3*
