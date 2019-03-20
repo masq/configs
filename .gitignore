@@ -19,6 +19,7 @@
 !.fehbg
 !.config/i3
 !.i3*
+!.cheeselock
 
 # Scripts I want synced
 !update.sh
