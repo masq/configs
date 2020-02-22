@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# TODO:
+# https://stackoverflow.com/questions/3466166/how-to-check-if-running-in-cygwin-mac-or-linux
+
 set -e
 
 print_warn "This script will perform apt-get updating and so will require sudo password"
