@@ -1,4 +1,5 @@
 " Masq's vimrc 9/17/2017
+execute pathogen#infect()
 
 " Ensure vim doesn't act weird
 set nocompatible
@@ -95,6 +96,20 @@ nnoremap ; :call Paste_Func()<cr>
 " Python specific coding
 autocmd FileType py setlocal shiftwidth=4 tabstop=4 softtabstop=4 expandtab
 autocmd FileType python setlocal shiftwidth=4 tabstop=4 softtabstop=4 expandtab
+" Syntastic Python
+let g:syntastic_python_checkers = ['mypy', 'pylint', 'flake8']
+"let g:syntastic_python_checkers = ['pylint', 'flake8']
+"let g:syntastic_python_checkers = ['flake8']
 
 " Javascript module specific coding
 au BufNewFile,BufRead *.mjs set syntax=javascript
+
+" Syntastic settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
