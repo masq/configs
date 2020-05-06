@@ -10,6 +10,7 @@
 # Certain rc files
 !.bashrc
 !.vimrc
+!.zshrc
 
 # X11 / Window manager config stuff
 !.xinitrc
