@@ -9,6 +9,7 @@
 
 # Certain rc files
 !.bashrc
+!.bash_functions
 !.vimrc
 
 # X11 / Window manager config stuff
