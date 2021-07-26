@@ -116,14 +116,19 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export PATH=/home/masq/bin/:$PATH                                                  
-export EDITOR=vim                                                                  
+# Set environment variables
+export PATH=/home/masq/bin/:$PATH
+export EDITOR=vim
 
-SSH_ENV="$HOME/.ssh/environment"
-mkdir "$HOME/.ssh" 2>/dev/null  # ignore errors, probably dir already exists
+# Source in our bash functions
+source "${HOME}/.bash_functions"
+
+# Handle ssh agent initialization stuff
+SSH_ENV="${HOME}/.ssh/environment"
+mkdir "${HOME}/.ssh" 2>/dev/null  # ignore errors, probably dir already exists
 touch "${SSH_ENV}"
 
-function start_agent {                                                             
+function start_agent {
 	print_info "Initializing new SSH agent"
 	/usr/bin/ssh-agent | sed 's/^echo/#echo/' > "${SSH_ENV}"
 	print_success "SSH agent initialized"
@@ -142,3 +147,4 @@ if [ -f "${SSH_ENV}" ]; then
 else
 	start_agent;
 fi
+
