@@ -11,3 +11,4 @@ xflux -z 98125
 
 # start our window manager
 exec i3
+# exec startlxde
