@@ -2,6 +2,8 @@
 
 set -e
 
+source ~/.bash_functions
+
 print_warn "This script will perform apt-get updating and so will require sudo password"
 
 set -ex
