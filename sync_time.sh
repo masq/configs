@@ -2,6 +2,8 @@
 
 set -e
 
+source ~/.bash_functions
+
 print_info "Acquiring time using NTP to reset the clock"
 
 sudo service ntp stop
