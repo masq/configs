@@ -25,4 +25,5 @@
 # Scripts I want synced
 !update.sh
 !time_sync.sh
-
+!iris-toggle.sh
+!iodine-iris-toggle.sh
