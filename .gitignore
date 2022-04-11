@@ -11,6 +11,7 @@
 !.bashrc
 !.bash_functions
 !.vimrc
+!.zshrc
 
 # X11 / Window manager config stuff
 !.xinitrc
