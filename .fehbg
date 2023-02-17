@@ -1,2 +1,2 @@
 #!/bin/sh
-feh  --bg-fill '/home/masq/Pictures/papes/1512440560031.png' 
+feh --no-fehbg --bg-fill '/home/masq/Pictures/1614098946864.jpg' 

@@ -104,6 +104,9 @@ let g:syntastic_python_checkers = ['mypy', 'pylint', 'flake8']
 " Javascript module specific coding
 au BufNewFile,BufRead *.mjs set syntax=javascript
 
+" YARA specific -- Consider all .yar/.yara files to be YARA files.
+autocmd BufNewFile,BufRead *.yar,*.yara setlocal filetype=yara
+
 " Syntastic settings
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
