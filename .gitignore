@@ -20,6 +20,8 @@
 !.Xresources
 !.fehbg
 !.config/i3
+!.config/pipewire
+!.config/wireplumber
 !.i3*
 !.cheeselock
 
