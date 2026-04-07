@@ -21,6 +21,7 @@
 !.Xresources
 !.fehbg
 !.config/i3
+!.config/polybar
 !.i3*
 !.cheeselock
 
