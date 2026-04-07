@@ -10,6 +10,7 @@
 # Certain rc files
 !.bashrc
 !.bash_functions
+!.profile
 !.vimrc
 !.zshrc
 
@@ -20,10 +21,12 @@
 !.Xresources
 !.fehbg
 !.config/i3
-!.config/pipewire
-!.config/wireplumber
 !.i3*
 !.cheeselock
+
+# Audio configuration files
+!.config/pipewire
+!.config/wireplumber
 
 # Scripts I want synced
 !update.sh
